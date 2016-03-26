@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+jar{
+    baseName = 'market-data-service'
+    version = '0.0.1'
+}
+
+dependencies{
+    compile libs.springBootStarter
+
+    testCompile libs.test.junit
+}

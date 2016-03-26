@@ -1,0 +1,10 @@
+ext{
+    libs = [
+            springBootStarter: 'org.springframework.boot:spring-boot-starter-web',
+
+            test: [
+                    junit: 'junit:junit',
+                    springBootTestStarter: 'org.springframework.boot:spring-boot-starter-test'
+            ]
+    ]
+}
