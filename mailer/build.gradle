@@ -1,4 +1,3 @@
-apply plugin: 'java'
 apply plugin: 'spring-boot'
 
 jar{
@@ -7,7 +6,7 @@ jar{
 }
 
 dependencies{
-    compile libs.springBootStarter
-
-    testCompile libs.test.junit
+    compile project(':utils'),
+            libs.springBootStarter,
+            libs.springBootStarterMail
 }

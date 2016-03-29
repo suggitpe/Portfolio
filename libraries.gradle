@@ -1,9 +1,11 @@
 ext{
     libs = [
             springBootStarter: 'org.springframework.boot:spring-boot-starter-web',
+            springBootStarterMail: 'org.springframework.boot:spring-boot-starter-mail',
+            jasypt: 'org.jasypt:jasypt:1.9.2',
 
             test: [
-                    junit: 'junit:junit',
+                    junit: 'junit:junit:4.12',
                     springBootTestStarter: 'org.springframework.boot:spring-boot-starter-test'
             ]
     ]

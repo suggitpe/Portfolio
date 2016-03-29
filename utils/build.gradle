@@ -1,0 +1,8 @@
+jar{
+    baseName = 'portfolio-utils'
+    version = '0.0.1'
+}
+
+dependencies{
+    compile libs.jasypt
+}

@@ -1,8 +1,15 @@
 allprojects{ projects ->
-    defaultTasks 'clean', 'build'
 
     apply plugin: 'idea'
-    apply from: "$rootDir/libraries.gradle"
+
+    defaultTasks 'clean', 'build'
+
+    idea.module {
+        downloadSources = true
+    }
+}
+
+subprojects{ projects ->
 
     buildscript {
         repositories {
@@ -14,10 +21,8 @@ allprojects{ projects ->
         }
     }
 
-    repositories{
-        jcenter()
-        mavenCentral()
-    }
+    apply from: "$rootDir/libraries.gradle"
+    apply plugin: 'java'
 
     group = 'org.suggs.portfolio'
 
@@ -26,7 +31,15 @@ allprojects{ projects ->
         targetCompatibility = 1.8
     }
 
-    idea.module {
-        downloadSources = true
+
+    repositories{
+        jcenter()
+        mavenCentral()
     }
+
+    dependencies{
+        testCompile libs.test.junit
+    }
+
+
 }
