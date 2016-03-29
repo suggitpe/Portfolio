@@ -6,7 +6,8 @@ ext{
 
             test: [
                     junit: 'junit:junit:4.12',
-                    springBootTestStarter: 'org.springframework.boot:spring-boot-starter-test'
+                    springBootTestStarter: 'org.springframework.boot:spring-boot-starter-test',
+                    greenMail: 'com.icegreen:greenmail:1.5.0'
             ]
     ]
 }

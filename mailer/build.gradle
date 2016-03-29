@@ -9,4 +9,6 @@ dependencies{
     compile project(':utils'),
             libs.springBootStarter,
             libs.springBootStarterMail
+
+    testCompile libs.test.greenMail
 }
